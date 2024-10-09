@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/info" android:title="详情" />
+    <item android:id="@+id/launch" android:title="启动" />
+    <!--item android:id="@+id/hidden" android:title="隐藏此应用" /-->
+    <item android:id="@+id/unins" android:title="卸载" />
+    <!--item android:id="@+id/settings" android:title="AirL设置" /-->
+</menu>

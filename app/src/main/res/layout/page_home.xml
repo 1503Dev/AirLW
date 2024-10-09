@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1.5"
+		android:id="@+id/homeTopLayout">
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1.0"
+		android:gravity="center"
+		android:id="@+id/homeCenterLayout">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="right">
+
+			<TextView
+				android:textSize="100dp"
+				android:textColor="#FFFFFFFF"
+				android:textStyle="bold"
+				android:id="@+id/homeTime"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="00:00"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="0000-00-00 周一"
+				android:textColor="#FFFFFFFF"
+				android:textSize="18dp"
+				android:id="@+id/homeDate"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="300dp"
+		android:layout_height="match_parent"
+		android:layout_weight="1.4"
+		android:gravity="top|center_horizontal"
+		android:id="@+id/homePowerLayout">
+
+		<ProgressBar
+			android:layout_width="wrap_content"
+			style="?android:attr/progressBarStyleHorizontal"
+			android:layout_height="24dp"
+			android:layout_weight="1.0"
+			android:layout_marginRight="8dp"
+            android:max="100"
+			android:id="@+id/homePowerProgress"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="0%"
+			android:textSize="18dp"
+			android:id="@+id/homePowerText"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+
